@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Our Story</title>
+    <link rel="stylesheet" href="divya.css">
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1 id="typing-text"></h1>
+            <p class="sub-text">For Divii 💖</p>
+            <button onclick="scrollToNext()">Start Our Journey 💫</button>
+        </div>
+    </section>
+
+    <!-- NEXT SECTION PLACEHOLDER -->
+    <section class="story-section" id="section2">
+
+        <h2 class="section-title">How It All Started 💫</h2>
+
+        <div class="story-container">
+
+            <div class="story-image">
+                <img src="photoes/divya1.jpeg" alt="memory">
+            </div>
+
+            <div class="story-text">
+                <div class="story-card">
+                    <p>
+                        It started with a simple doubt in a lab class...<br><br>
+                        You came to ask something about basic programming.<br><br>
+                        I didn’t know then… that small moment would turn into something so special.<br><br>
+                        From that day, we didn’t just solve problems… we became friends 💖
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="gallery-section">
+
+        <h2 class="section-title">Our Best Moments 📸</h2>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="photoes/divya3.jpeg" alt="">
+                <div class="overlay-text">
+                    Even from a short distance… we talked through symbols 💫
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="photoes/divya2.jpeg" alt="">
+                <div class="overlay-text">
+                    That moment we met and kept talking… it was unforgettable 💖
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="photoes/divya4.jpeg" alt="">
+                <div class="overlay-text">
+                    Working together for our future goals 🌟
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <img id="lightbox-img">
+    </div>
+
+    <section class="special-section">
+
+        <h2 class="section-title">Why You Are So Special 💖</h2>
+
+        <div class="special-container">
+
+            <div class="special-card">You always support me, no matter what 💫</div>
+
+            <div class="special-card">You understand me in ways no one else does 💖</div>
+
+            <div class="special-card">You make my days happier just by being there 😊</div>
+
+            <div class="special-card">You take care of me like it actually matters 🌸</div>
+
+            <div class="special-card">Your helping nature makes you truly special 🌟</div>
+
+        </div>
+
+    </section>
+    <section class="letter-section">
+
+        <h2 class="section-title">A Letter For You 💌</h2>
+
+        <div class="letter-box">
+            <p id="letter-text"></p>
+        </div>
+
+    </section>
+    <section class="interactive-section">
+
+        <h2>Click to See Why You're Special 💖</h2>
+
+        <button onclick="showMessage()">Click Me 💫</button>
+
+        <p id="special-message"></p>
+
+    </section>
+
+
+
+
+    <section class="birthday-section">
+        <!-- ROBOT INTRO -->
+        <div id="robot-box" class="hidden">
+            <div class="robot">🤖</div>
+            <p id="robot-text"></p>
+        </div>
+
+        <!-- AUDIO -->
+        <audio id="bg-music" src="music/song.mp3"></audio>
+
+        <button class="start-btn" onclick="startSurprise()">
+            🎁 Open Your Surprise
+        </button>
+
+        <!-- INTRO TEXT -->
+        <div id="intro" class="hidden">
+            <h2 id="intro-text"></h2>
+        </div>
+
+        <!-- FINAL WISH -->
+        <div id="final" class="hidden">
+
+            <div class="overlay"></div>
+
+            <h1 class="main-title">✨ <b>Happy Birthday Divii</b> ✨</h1>
+
+            <p id="final-message"></p>
+
+        </div>
+
+        <!-- CONFETTI -->
+        <canvas id="confetti-canvas"></canvas>
+
+    </section>
+
+    <audio id="bg-music" src="music/song.mp3"></audio>
+    <canvas id="confetti-canvas"></canvas>
+    <div class="hearts-container"></div>
+    <canvas id="particles"></canvas>
+
+    <script src="divya.js"></script>
+</body>
+
+</html>
